@@ -1,0 +1,4 @@
+{
+    "all_columns": ["BadLogonCount", "CannotChangePassword", "CanonicalName", "CN","Created", "createTimeStamp", "DisplayName", "DistinguishedName",  "EmployeeNumber", "Enabled", "GivenName", "Initials", "instanceType", "LastBadPasswordAttempt", "LastLogonDate", "LockedOut", "MemberOf",    "Modified", "modifyTimeStamp", "Name", "ObjectClass", "ObjectGUID",    "PasswordExpired", "PasswordLastSet", "PrimaryGroup", "primaryGroupID",    "SamAccountName", "SID", "Surname", "userAccountControl",  "UserPrincipalName", "whenChanged", "whenCreated", "PropertyNames",    "AddedProperties", "RemovedProperties", "ModifiedProperties",    "PropertyCount", "MemberOff"],
+    "selected_columns": ["Name", "SamAccountName", "EmployeeNumber", "Enabled", "PasswordExpired"]
+}
