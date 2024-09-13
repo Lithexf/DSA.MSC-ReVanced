@@ -1,0 +1,3 @@
+Get-ADUser -Filter {EmployeeNumber -like "164*" -and PrimaryGroup -eq "CN=Domain Users,CN=Users,DC=PRODUCTION,DC=AWPE"} -Properties BadLogonCount, CannotChangePassword, CanonicalName, CN, Created, createTimeStamp, DisplayName, DistinguishedName, EmployeeNumber, Enabled, GivenName, Initials, instanceType, LastBadPasswordAttempt, LastLogonDate, LockedOut, Modified, modifyTimeStamp, Name, PasswordExpired, PasswordLastSet, PrimaryGroup, primaryGroupID, SamAccountName, Surname, userAccountControl, UserPrincipalName, whenChanged, whenCreated, MemberOf |
+Select-Object *,  @{Name = 'MemberOff'; Expression ={$_.MemberOf -join '; '}}|
+Export-Csv -Path "output.csv" -NoTypeInformation
